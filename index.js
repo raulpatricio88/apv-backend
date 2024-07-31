@@ -25,7 +25,7 @@ const corsOptions = {
     }
 }
 
-app.use(cors(corsOptions));
+app.use(cors({origin: '*'}));
 
 //routing propio de express
 app.use('/api/veterinarios', veterinarioRoutes );
