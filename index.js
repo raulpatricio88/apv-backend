@@ -12,7 +12,7 @@ app.use(express.json()); // de esta forma le decimos que vamos a enviar datos de
 
 conectarDB();
 //'http://localhost:4173' corresponde a deployment preview
-const dominiosPermitidos = [process.env.FRONTEND_URL, 'http://localhost:4173'];
+const dominiosPermitidos = [process.env.FRONTEND_URL];
 
 const corsOptions = {
     origin: function(origin, callback) {
